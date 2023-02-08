@@ -1,6 +1,7 @@
 import React from 'react';
 import { SectionList, StyleSheet, Text, View} from 'react-native';
 
+// estilo da lista de dados
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -20,6 +21,9 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
 });
+
+
+// Componente função para as seções lógicas da lista de dados
 
 const SectionListBasics = () => {
   return (
@@ -52,6 +56,8 @@ const SectionListBasics = () => {
           {title: 'Y', data: ['Yakisoba']},
           {title: 'Z', data: ['Zoologico']},
         ]}
+
+        // renderizando os itens da lista de dados
         renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
         renderSectionHeader ={({section}) => (
           <Text style={styles.sectionHeader}>{section.title}</Text>
