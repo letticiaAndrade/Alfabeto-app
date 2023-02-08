@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
 });
 
 
-// Componente função para as seções lógicas da lista de dados
+// Componente função para as seções lógicas da lista
 
 const SectionListBasics = () => {
   return (
@@ -57,7 +57,7 @@ const SectionListBasics = () => {
           {title: 'Z', data: ['Zoologico']},
         ]}
 
-        // renderizando os itens da lista de dados
+        // renderizando os itens da lista
         renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
         renderSectionHeader ={({section}) => (
           <Text style={styles.sectionHeader}>{section.title}</Text>
